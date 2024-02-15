@@ -6,6 +6,7 @@
     <title>Activity2</title>
 </head>
 <body>
+    <h2><u>A basic form</u></h2>
     <form action="/server">
     Name:
     <input type="text">
@@ -17,7 +18,26 @@
     <label for="female">Female</label>
     <br>
     Country:
-    <sample></sample>
+    <select name="country" id="country">
+    <option>Select an option..</option>
+   <option value="India">India</option>
+   <option value="USA">USA</option>
+   <option value="France">France</option>
+   <option value="Japan">Japan</option>
+   <option value="Thailand">Thailand</option>
+   <option value="South Africa">South Africa</option>
+    </select>
+    <br>
+    Message:
+    <label for="message"></label>
+    <br>
+    <textarea name="message" id="message" cols="20" rows="4" placeholder="Write your message here"></textarea>
+    <br>
+    <input type="checkbox" id="sub" value="subscribe">
+    <label for="sub">Subscribe?</label>
+    <br>
+    <button>Submit</button>
     </form>
+    <hr>
 </body>
 </html>
